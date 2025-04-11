@@ -1,9 +1,96 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.9">
   <diagram name="Page-1" id="d3o3Ne0F54tQGpak4MgQ">
-    <mxGraphModel>
+    <mxGraphModel dx="876" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="R1RehaqrXKYtqmL33bmL-9" value="Hardware" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="760" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-10" value="EEPROM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-9">
+          <mxGeometry x="40" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-11" value="Temperature Sensor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-9">
+          <mxGeometry x="140" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-12" value="Microcontroller" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-9">
+          <mxGeometry x="240" y="20" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-13" value="LED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-9">
+          <mxGeometry x="660" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-14" value="SW Drivers" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="760" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-15" value="I²C" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-14">
+          <mxGeometry x="40" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="R1RehaqrXKYtqmL33bmL-14" source="R1RehaqrXKYtqmL33bmL-17" target="R1RehaqrXKYtqmL33bmL-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-17" value="Timer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-14">
+          <mxGeometry x="260" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="R1RehaqrXKYtqmL33bmL-14" source="R1RehaqrXKYtqmL33bmL-19" target="R1RehaqrXKYtqmL33bmL-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-19" value="ADC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-14">
+          <mxGeometry x="140" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-20" value="DMA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-14">
+          <mxGeometry x="360" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-21" value="GPIO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-14">
+          <mxGeometry x="660" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-22" value="ISR" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="760" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-23" value="Temp Data Processing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-22">
+          <mxGeometry x="360" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="R1RehaqrXKYtqmL33bmL-22" source="R1RehaqrXKYtqmL33bmL-25" target="R1RehaqrXKYtqmL33bmL-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-25" value="Gain Factor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-22">
+          <mxGeometry x="40" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-26" value="Main (optional)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="760" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-27" value="Command Handler" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-26">
+          <mxGeometry x="40" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-28" value="Error Handler" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-26">
+          <mxGeometry x="240" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-29" value="Temperature Logging" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-26">
+          <mxGeometry x="450" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-30" value="Display Output" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;" vertex="1" parent="R1RehaqrXKYtqmL33bmL-26">
+          <mxGeometry x="660" y="20" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-10" target="R1RehaqrXKYtqmL33bmL-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-11" target="R1RehaqrXKYtqmL33bmL-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-20" target="R1RehaqrXKYtqmL33bmL-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-23" target="R1RehaqrXKYtqmL33bmL-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-21" target="R1RehaqrXKYtqmL33bmL-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="R1RehaqrXKYtqmL33bmL-15" target="R1RehaqrXKYtqmL33bmL-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R1RehaqrXKYtqmL33bmL-37" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Temperature Monitoring and Warning LED Software Architecture&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="40" width="720" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
